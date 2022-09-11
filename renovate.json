@@ -1,6 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ]
+  "extends": ["config:base"],
+  "automerge": false,
+  "labels": ["dependencies"],
+  "commitMessageAction": "Bump",
+  "commitMessageTopic": "{{depName}}",
+  "commitMessageExtra": "from {{currentValue}} to {{newValue}}",
+  "prHourlyLimit": 0,
+  "rangeStrategy": "bump",
+  "timezone": "UTC",
+  "schedule": "on sunday before 11:00pm",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": "before 6:00am on the first day of the month"
+  }
 }
