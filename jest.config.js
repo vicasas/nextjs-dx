@@ -7,12 +7,6 @@ const createJestConfig = nextJest({
 
 /** @type {import('jest').Config} */
 const customJestConfig = {
-  // collectCoverageFrom: [
-  //   '{src,test}/**/*.{js,jsx,ts,tsx}',
-  //   '!**/*.d.ts',
-  //   '!**/node_modules/**',
-  // ],
-  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   // if using TypeScript with a baseUrl set to the root directory then you need the below for alias' to work
   moduleDirectories: ['node_modules', '<rootDir>/'],

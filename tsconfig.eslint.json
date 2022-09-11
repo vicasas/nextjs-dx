@@ -1,0 +1,5 @@
+// See more: https://github.com/iamturns/eslint-config-airbnb-typescript/issues/215
+{
+  "extends": "./tsconfig.json",
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
+}

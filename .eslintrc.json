@@ -1,4 +1,5 @@
 {
+  "root": true,
   "env": {
     "browser": true,
     "es2021": true,
@@ -8,14 +9,17 @@
     "plugin:react/recommended",
     "airbnb",
     "airbnb/hooks",
+    "airbnb-typescript",
     "plugin:prettier/recommended",
     "plugin:@next/next/recommended"
   ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "project": ["./tsconfig.eslint.json"],
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": ["react", "@typescript-eslint/eslint-plugin"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
@@ -39,6 +43,10 @@
     ]
   },
   "overrides": [
+    {
+      "files": ["**/*.[tt]s?(x)"],
+      "extends": ["plugin:@typescript-eslint/recommended"]
+    },
     {
       "files": [
         "**/__tests__/**/*.[jt]s?(x)",
