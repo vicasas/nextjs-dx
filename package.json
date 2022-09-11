@@ -1,7 +1,28 @@
 {
-  "name": "my-app",
+  "name": "nextjs-dx",
   "version": "0.1.0",
+  "license": "MIT",
   "private": true,
+  "description": "Quickly launch a new Next.js app built with the best development experience (DX)",
+  "homepage": "https://github.com/vicasas/nextjs-dx#readme",
+  "author": "Victor Casas",
+  "bugs": {
+    "url": "https://github.com/vicasas/nextjs-dx/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicasas/nextjs-dx.git"
+  },
+  "keywords": [
+    "react",
+    "nextjs",
+    "eslint",
+    "prettier",
+    "husky",
+    "jest",
+    "playwright",
+    "typescript"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
